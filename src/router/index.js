@@ -12,6 +12,21 @@ const routes = [
     name: 'Register',
     component: () => import('views/Register'),
   },
+  {
+    path: '/userlogin',
+    name: 'UserLogin',
+    component: () => import('views/UserLogin'),
+  },
+  {
+    path: '/avator',
+    name: 'Avator',
+    component: () => import('views/Avator'),
+  },
+  {
+    path: '/404',
+    name: 'NotFound',
+    component: () => import('views/NotFound'),
+  },
 ]
 
 const router = createRouter({
