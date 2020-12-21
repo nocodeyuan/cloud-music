@@ -25,9 +25,9 @@ const routes = [
     component: () => import('views/UserLogin'),
   },
   {
-    path: '/avator',
-    name: 'Avator',
-    component: () => import('views/Avator'),
+    path: '/avatar',
+    name: 'Avatar',
+    component: () => import('views/Avatar'),
   },
   {
     path: '/404',
@@ -47,6 +47,7 @@ router.beforeEach((to, from, next) => {
   if (to.matched.length !== 0) {
     //访问权限验证
     const tokenStr = store.state.login.to_ken
+    // console.log(tokenStr)
     const allowPath = ['/', '/register', '/userlogin']
     const vaild = allowPath.indexOf(to.path) !== -1
     if (vaild || tokenStr) return next()

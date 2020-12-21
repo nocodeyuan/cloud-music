@@ -57,6 +57,7 @@ export default {
       this['verifyLogin'](data)
         .then((res) => {
           // console.log(this.$store.state.login.pro_file)
+          console.log('登录成功')
           this.$router.replace('/home')
         })
         .catch((err) => {

@@ -20,7 +20,7 @@ const actions = {
     return new Promise((resolve, reject) => {
       userLogin(data)
         .then((res) => {
-          console.log(res)
+          // console.log(res)
           if (res.status === 200) {
             commit('SET_TOKEN', res.data.token)
             commit('SET_PROFILE', res.data.profile)

@@ -1,12 +1,12 @@
 <template>
   <div>
-    AvatorSetting
+    AvatarSetting
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Avator',
+  name: 'Avatar',
 }
 </script>
 
