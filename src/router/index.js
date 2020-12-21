@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from 'views/Home'
+import store from '@/store'
+
+import FirstScreen from 'views/FirstScreen'
 
 const routes = [
   {
     path: '/',
+    name: 'FirstScreen',
+    component: FirstScreen,
+  },
+  {
+    path: '/home',
     name: 'Home',
-    component: Home,
+    component: () => import('views/Home'),
   },
   {
     path: '/register',
@@ -32,6 +39,21 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+})
+
+//404页面
+router.beforeEach((to, from, next) => {
+  //判断页面是否存在
+  if (to.matched.length !== 0) {
+    //访问权限验证
+    const tokenStr = store.state.login.to_ken
+    const allowPath = ['/', '/register', '/userlogin']
+    const vaild = allowPath.indexOf(to.path) !== -1
+    if (vaild || tokenStr) return next()
+    next('/userlogin')
+  } else {
+    next({ path: '/404' })
+  }
 })
 
 export default router

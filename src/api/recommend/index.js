@@ -1,7 +1,7 @@
-import request from '@/request'
+import { get } from '@/request'
 
 const getCommendList = async () => {
-  const result = await request('/top/playlist/highquality?limit=6')
+  const result = await get('/top/playlist/highquality?limit=6')
   // console.log(result)
   return result
 }

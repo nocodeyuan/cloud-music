@@ -47,9 +47,4 @@ input {
   outline-style: none;
   border: none;
 }
-
-.btn primary {
-  color: #fff;
-  background-color: #e11cff;
-}
 </style>

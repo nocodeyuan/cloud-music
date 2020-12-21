@@ -101,8 +101,9 @@
         </g>
       </svg>
       <img
-        src="https://tse4-mm.cn.bing.net/th/id/OIP.yCbA2DuLAcNxulo52Dav3AAAAA?pid=Api&rs=1"
-        alt=""
+        :src="imgUrl"
+        alt="avatarImg"
+        :title="nickname"
         @click="jumpSetting"
       />
     </div>
@@ -110,6 +111,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'Header',
   methods: {
@@ -117,23 +120,29 @@ export default {
       this.$router.push('/avator')
     },
   },
+
+  computed: {
+    ...mapState('login', {
+      imgUrl(state) {
+        return state.pro_file.avatarUrl
+      },
+      nickname(state) {
+        return state.pro_file.nickname
+      },
+    }),
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .header-item {
   position: relative;
-  // position: fixed;
-  // left: 0;
-  // top: 0;
-  // z-index: 2;
   box-sizing: border-box;
   height: 80px;
   line-height: 80px;
   width: 100vw;
   background: linear-gradient(45deg, #d43c33, #f00011, #ff0000);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  // overflow: hidden;
 
   svg {
     height: 33px;

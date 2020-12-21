@@ -41,6 +41,7 @@ export default {
       this.currentIndex = index
     },
   },
+
   components: {
     HeaderPart,
     ScrollArea,
