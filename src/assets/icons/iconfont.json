@@ -1,0 +1,51 @@
+{
+  "id": "2288866",
+  "name": "vue-cloud-music",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5379896",
+      "name": "left",
+      "font_class": "left",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "5379936",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "1884165",
+      "name": "play",
+      "font_class": "play1",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "17412509",
+      "name": "Pause",
+      "font_class": "Pause",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "15167645",
+      "name": "left",
+      "font_class": "left_9",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "3104125",
+      "name": "hot",
+      "font_class": "hot",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}

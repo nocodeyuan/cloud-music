@@ -24,13 +24,19 @@ export default {
         click: true,
         tap: true,
       })
-      this.scroll.refresh()
-      // console.log(this.scroll)
     } else if (!this.$refs.wrapper) {
       return
     } else {
       this.scroll.refresh()
     }
+    this.scroll.on('mousewheelStart', () => {
+      console.log('mouse refresh')
+      this.scroll.refresh()
+    })
+    this.scroll.on('scrollStart', () => {
+      console.log('click refresh')
+      this.scroll.refresh()
+    })
   },
 }
 </script>

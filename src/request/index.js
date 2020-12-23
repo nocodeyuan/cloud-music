@@ -9,6 +9,7 @@ const instance = axios.create({
 instance.defaults.headers.post['Content-Type'] =
   'application/json;charset=utf-8'
 
+instance.defaults.withCredentials = true
 //TODO请求拦截
 
 //GET请求

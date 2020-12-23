@@ -6,11 +6,11 @@
     </div>
     <div class="login-group" v-show="cellphone">
       <div class="input-group">
-        <label for="nickname">用户：</label>
+        <label for="nickname">Username:</label>
         <input type="text" id="nickname" v-model="phone" />
       </div>
       <div class="input-group">
-        <label for="pwd">密码：</label>
+        <label for="pwd">Password:</label>
         <input type="password" id="pwd" v-model="password" />
       </div>
       <div class="btn-group">

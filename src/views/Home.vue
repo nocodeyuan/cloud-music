@@ -13,7 +13,7 @@
         ></nav-bar>
 
         <!-- 滚动区 -->
-        <scroll class="">
+        <scroll ref="scroll">
           <scroll-area :thatIndex="currentIndex"></scroll-area>
         </scroll>
       </div>
@@ -41,7 +41,6 @@ export default {
       this.currentIndex = index
     },
   },
-
   components: {
     HeaderPart,
     ScrollArea,

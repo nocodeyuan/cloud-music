@@ -30,6 +30,11 @@ const routes = [
     component: () => import('views/Avatar'),
   },
   {
+    path: '/record/:id',
+    name: 'Record',
+    component: () => import('../views/Record.vue'),
+  },
+  {
     path: '/404',
     name: 'NotFound',
     component: () => import('views/NotFound'),

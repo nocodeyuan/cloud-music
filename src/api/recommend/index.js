@@ -2,8 +2,12 @@ import { get } from '@/request'
 
 const getCommendList = async () => {
   const result = await get('/top/playlist/highquality?limit=6')
-  // console.log(result)
   return result
 }
 
-export { getCommendList }
+const getDailyList = async () => {
+  const result = await get('/recommend/songs')
+  return result
+}
+
+export { getCommendList, getDailyList }
