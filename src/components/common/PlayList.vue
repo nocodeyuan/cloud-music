@@ -8,11 +8,11 @@
     <div class="song-space">
       <div class="song-title">{{ item.name }}</div>
       <div class="song-info">
-        <span></span>
-        {{ item.ar[0].name }}-{{ item.alia[0] || item.name }}
+        <span class="iconfont icon-hot"></span>
+        <span>{{ item.ar[0].name }}-{{ item.alia[0] || item.name }}</span>
       </div>
     </div>
-    <div class="iconfont icon-play"></div>
+    <div class="iconfont icon-play1"></div>
   </div>
 </template>
 
@@ -58,11 +58,17 @@ export default {
       white-space: nowrap;
       text-overflow: ellipsis;
       -o-text-overflow: ellipsis;
+      span {
+        font-size: 14px;
+        &:nth-child(1) {
+          color: #ff0000;
+        }
+      }
     }
   }
   .iconfont {
-    font-size: 25px;
-    color: #888;
+    font-size: 20px;
+    color: #ccc;
   }
 }
 </style>

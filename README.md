@@ -1,5 +1,9 @@
 # cloud_music
 
+### Objective
+
+- Individuals want to master the Vue technology stack by completing this project.
+
 ## Project setup
 
 ```
