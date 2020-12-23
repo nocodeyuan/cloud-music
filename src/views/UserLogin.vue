@@ -28,8 +28,8 @@ export default {
   data() {
     return {
       cellphone: false,
-      phone: '19814666836',
-      password: 'yuyuyu123',
+      phone: 'username',
+      password: 'password',
     }
   },
   methods: {

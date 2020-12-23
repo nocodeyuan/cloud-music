@@ -55,6 +55,9 @@ export default {
     this.clear()
     this.increment(1, 100)
   },
+  beforeUnmount() {
+    this.clear()
+  },
   //监视图片角度变化
   watch: {
     deg() {
@@ -85,6 +88,7 @@ export default {
     },
     clear() {
       if (this.interval) clearInterval(this.interval)
+      this.interval = null
     },
   },
 
