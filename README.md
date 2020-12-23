@@ -24,6 +24,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Build server
 
+- Server by **NeteaseCloudMusicApi** https://binaryify.github.io/NeteaseCloudMusicApi/
+
 ```shell
 
 cd cloud_music/server
